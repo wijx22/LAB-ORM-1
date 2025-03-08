@@ -9,6 +9,6 @@
     <small>Published at: {{ post.published_at }}</small>
 
     <a href="{% url 'home' %}">🔙 Back to Home</a>
-    <a href="{% url 'update_post' post.id %}">✏️ Edit</a>
+    <a href="{% url 'update_post' post_id=post.id %}">✏️ Edit</a>
     <a href="{% url 'delete_post' post.id %}">🗑️ Delete</a>
 {% endblock %}
